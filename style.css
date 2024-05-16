@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --pri-darkblue: hsl(243, 87%, 12%);
+  --pri-des-blue: hsl(238, 22%, 44%);
+  --clr-buttons: hsl(224, 93%, 58%);
+  --clr-cyan: hsl(170, 45%, 43%);
+  --clr-gray-blue: hsl(240, 75%, 98%);
+  --clr-gray: hsl(0, 0%, 75%);
+  --ff-raleway: "Raleway", sans-serif;
+  --ff-opensans: "Open Sans", sans-serif;
+}
+
+/* General */
+
+img,
+picture,
+svg {
+  max-width: 100%;
+}
+h1,
+h3 {
+  font-family: var(--ff-raleway);
+  color: var(--pri-darkblue);
+  margin-bottom: 1rem;
+}
+
+p,
+button,
+input::placeholder {
+  font-family: var(--ff-opensans);
+  color: var(--pri-darkblue);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+input::placeholder {
+  opacity: 0.3;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+}
+.nav-items > a {
+  margin-left: 2rem;
+  font-weight: 700;
+  font-family: var(--ff-raleway);
+  color: var(--pri-des-blue);
+}
+.margin {
+  margin-bottom: 3rem;
+}
+.image{
+    margin-left: 2rem;
+}
+.margin-btm {
+  margin-bottom: 1rem;
+}
+#header-form {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+input {
+  width: 70%;
+  border: solid 1px var(--clr-gray);
+  outline: none;
+  padding-left: 1rem;
+}
+button {
+  background-color: var(--clr-buttons);
+  color: #fff;
+  padding: 0.6rem 2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-justify {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-link {
+  color: var(--clr-cyan);
+  display: flex;
+  align-items: center;
+  width: 30%;
+  margin-bottom: 2rem;
+  transition: 0.3s all ease-in-out;
+}
+.info-link:hover {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+/* Testimonials */
+.testimonials {
+  background-color: #fff;
+  width: 60%;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+}
+.testimonial-image-text {
+  margin-top: 1.5rem;
+}
+.testimonial-image-text img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.border {
+  border: red solid 2px;
+}
+/* Newsletter section */
+.newsletter {
+  background-color: var(--pri-des-blue);
+  padding: 2rem 0;
+}
+.white {
+  color: #fff;
+}
+.fs-nltr {
+  font-size: 1.5rem;
+}
+.newsletter-text {
+  width: 70%;
+}
+.newsletter-text p {
+  width: 70%;
+}
+.newletter-form {
+  width: 50%;
+}
+.newletter-form input {
+  width: 100%;
+  padding: 0.6rem 2rem;
+}
+/* Footer section styling */
+footer {
+  background-color: var(--pri-darkblue);
+  color: #fff;
+  font-family: var(--ff-opensans);
+  font-size: 0.875rem;
+  line-height: 1.9;
+}
+
+.contact img {
+  margin-right: 20px;
+}
+.social-media img {
+  width: 30px;
+  margin-left: 1rem;
+}
+.footer-lists {
+  display: flex;
+  justify-content: space-between;
+}
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .fs-nav {
+    width: 70px;
+  }
+  .nav-items > a {
+    margin-left: 1rem;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .flex {
+    flex-direction: column-reverse;
+  }
+  .image{
+    margin-bottom: 2rem;
+  }
+  .text {
+    text-align: center;
+  }
+  #header-form {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .fs-h3{
+    font-size: 1rem;
+    margin-top: 3rem;
+  }
+  .input-text {
+    width: 100%;
+    padding: 0.6rem 2rem;
+  }
+  .text p {
+    text-align: left;
+  }
+  .w-100{
+    width: 100%;
+  }
+  .info-link {
+    justify-content: center;
+  }
+  .testimonials {
+    background-color: blanchedalmond;
+  }
+  .testimonials-p {
+    text-align: left;
+  }
+  .newsletter-text{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .newsletter-text p{
+    width: 100%;
+  }
+  .newsletter .flex-justify {
+    display: block;
+  }
+  .footer-lists {
+    display: block;
+  }
+  .footer-lists ul{
+    margin-top: 2rem;
+  }
+  .contact{
+    display: flex;
+    align-items: center;
+  }
+  .social-media{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
